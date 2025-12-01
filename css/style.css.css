@@ -1,0 +1,146 @@
+/* ===== Fundo geral do site ===== */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff; /* texto padrão branco */
+  background: linear-gradient(135deg, #0d6efd, #6610f2); /* gradiente azul/roxo */
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+  background-color: rgba(0,0,0,0.6); /* navbar semi-transparente */
+}
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.nav-link {
+  transition: color 0.3s ease;
+}
+.nav-link:hover {
+  color: #ffc107; /* amarelo no hover */
+}
+
+/* ===== Foto de perfil no topo ===== */
+.perfil-topo {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #ffc107;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+/* ===== Hero Section ===== */
+#inicio {
+  text-align: center;
+  padding: 6rem 1rem;
+}
+#inicio h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+#inicio p {
+  font-size: 1.3rem;
+}
+#inicio .btn-primary {
+  background-color: #ffc107;
+  color: #000;
+  font-weight: bold;
+  border: none;
+}
+#inicio .btn-primary:hover {
+  background-color: #e0a800;
+  color: #fff;
+}
+
+/* ===== Seção Sobre ===== */
+#sobre {
+  padding: 4rem 1rem;
+  background-color: rgba(255,255,255,0.1); /* leve contraste */
+  border-radius: 10px;
+}
+#sobre h2 {
+  color: #ffc107;
+  margin-bottom: 1rem;
+}
+#sobre p {
+  font-size: 1.1rem;
+}
+
+/* ===== Projetos (cards) ===== */
+#projetos {
+  padding: 4rem 1rem;
+}
+.card {
+  background: #fff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+.card-title {
+  color: #0d6efd;
+  font-weight: bold;
+}
+
+/* ===== Formulário de contato ===== */
+#contato {
+  padding: 4rem 1rem;
+}
+form {
+  background: #fff;
+  color: #000;
+  border-radius: 10px;
+  padding: 2rem;
+}
+form input, form textarea {
+  border-radius: 8px;
+}
+form button {
+  width: 100%;
+  font-size: 1.1rem;
+  background-color: #198754;
+  border: none;
+}
+form button:hover {
+  background-color: #157347;
+}
+
+/* ===== Footer ===== */
+footer {
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 1.5rem 0;
+}
+footer a {
+  color: #ffc107;
+  margin: 0 10px;
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: #fff;
+}
+
+/* ===== Responsividade extra ===== */
+@media (max-width: 576px) {
+  #inicio h1 {
+    font-size: 2rem;
+  }
+  #inicio p {
+    font-size: 1rem;
+  }
+  .card img {
+    height: 150px;
+  }
+}
